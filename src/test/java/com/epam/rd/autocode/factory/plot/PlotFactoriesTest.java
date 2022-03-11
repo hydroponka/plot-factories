@@ -26,16 +26,16 @@ public class PlotFactoriesTest {
                 () -> "Scar");
 
         assertEquals(
-                "Ariel is great. Ariel and Eric love each other. Ursula interferes with their happiness but loses in the end.",
-                mermaidPlotFactory.plot().toString()
+                "Ariel is young and adorable. Ariel and Eric love each other. Ursula interferes with their happiness, but loses in the end.",
+                mermaidPlotFactory.plot().asText()
         );
         assertEquals(
-                "Belle is great. Belle and Beast love each other. Gaston interferes with their happiness but loses in the end.",
-                beautyAndTheBeastPlotFactory.plot().toString()
+                "Belle is young and adorable. Belle and Beast love each other. Gaston interferes with their happiness, but loses in the end.",
+                beautyAndTheBeastPlotFactory.plot().asText()
         );
         assertEquals(
-                "Simba is great. Simba and Nala love each other. Scar interferes with their happiness but loses in the end.",
-                lionKingPlotFactory.plot().toString()
+                "Simba is young and adorable. Simba and Nala love each other. Scar interferes with their happiness, but loses in the end.",
+                lionKingPlotFactory.plot().asText()
         );
     }
 
@@ -57,16 +57,16 @@ public class PlotFactoriesTest {
                 () -> "shape-shifting demigod Maui");
 
         assertEquals(
-                "Mulan feels a bit awkward and uncomfortable. But personal issues fades, when a big trouble comes - Hun invasion. Mulan stands up against it, but with no success at first. But putting self together and help of friends, including spectacular funny little dragon Mushu restore the spirit and Mulan overcomes the crisis and gains gratitude and respect.",
-                mulanPlotFactory.plot().toString()
+                "In the beginning, Mulan feels a bit awkward and uncomfortable. But personal issue fades, when a big trouble comes - Hun invasion. Mulan stands up against it, but with no success at first. But then, by putting self together and with the help of friends, including spectacular, funny little dragon Mushu, Mulan restores the spirit, overcomes the crisis and gains gratitude and respect.",
+                mulanPlotFactory.plot().asText()
         );
         assertEquals(
-                "Anna feels a bit awkward and uncomfortable. But personal issues fades, when a big trouble comes - her sister Elsa is overwhelmed by her magical powers. Anna stands up against it, but with no success at first. But putting self together and help of friends, including spectacular funny snowman Olaf restore the spirit and Anna overcomes the crisis and gains gratitude and respect.",
-                frozenPlotFactory.plot().toString()
+                "In the beginning, Anna feels a bit awkward and uncomfortable. But personal issue fades, when a big trouble comes - her sister Elsa is overwhelmed by her magical powers. Anna stands up against it, but with no success at first. But then, by putting self together and with the help of friends, including spectacular, funny snowman Olaf, Anna restores the spirit, overcomes the crisis and gains gratitude and respect.",
+                frozenPlotFactory.plot().asText()
         );
         assertEquals(
-                "Moana feels a bit awkward and uncomfortable. But personal issues fades, when a big trouble comes - a blight strikes the island. Moana stands up against it, but with no success at first. But putting self together and help of friends, including spectacular funny shape-shifting demigod Maui restore the spirit and Moana overcomes the crisis and gains gratitude and respect.",
-                moanaPlotFactory.plot().toString()
+                "In the beginning, Moana feels a bit awkward and uncomfortable. But personal issue fades, when a big trouble comes - a blight strikes the island. Moana stands up against it, but with no success at first. But then, by putting self together and with the help of friends, including spectacular, funny shape-shifting demigod Maui, Moana restores the spirit, overcomes the crisis and gains gratitude and respect.",
+                moanaPlotFactory.plot().asText()
         );
     }
 
@@ -86,16 +86,16 @@ public class PlotFactoriesTest {
                 () -> "Ronan the Accuser");
 
         assertEquals(
-                "Ten Rings is about to access Stark Industries technologies and that threatens the world. But the brave Iron Man is on guard. So, no way that intrigues of Obadiah Stane overcome the willpower of the inflexible hero.",
-                ironManPlotFactory.plot().toString()
+                "Ten Rings is about to access Stark Industries technologies and that threatens the world. But the brave Iron Man is on guard. So, no way that intrigues of Obadiah Stane will bend the willpower of the inflexible hero.",
+                ironManPlotFactory.plot().asText()
         );
         assertEquals(
-                "Chitauri Invasion threatens the world. But the brave Iron Man, the brave Captain America, the brave Hulk, the brave Thor, the brave Black Widow and the brave HawkEye are on guard. So, no way that intrigues of Loki overcome the willpower of inflexible heroes.",
-                avengersPlotFactory.plot().toString()
+                "Chitauri Invasion threatens the world. But the brave Iron Man, the brave Captain America, the brave Hulk, the brave Thor, the brave Black Widow and the brave HawkEye are on guard. So, no way that intrigues of Loki will bend the willpower of inflexible heroes.",
+                avengersPlotFactory.plot().asText()
         );
         assertEquals(
-                "Kree Invasion threatens the world. But the brave Star-Lord, the brave Gamora, the brave Drax, the brave Groot and the brave Rocket are on guard. So, no way that intrigues of Ronan the Accuser overcome the willpower of inflexible heroes.",
-                guardiansOfTheGalaxyPlotFactory.plot().toString()
+                "Kree Invasion threatens the world. But the brave Star-Lord, the brave Gamora, the brave Drax, the brave Groot and the brave Rocket are on guard. So, no way that intrigues of Ronan the Accuser will bend the willpower of inflexible heroes.",
+                guardiansOfTheGalaxyPlotFactory.plot().asText()
         );
     }
 }
